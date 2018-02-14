@@ -101,12 +101,14 @@ aside h2 {
 
 /*********** PRODUCTS SECTION ***********/
 .item-container{
-  width: 100%;
-  height: 100rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  height: auto;
   padding: 2rem;
   margin: 0 auto;   
   background-color: #EECFD4;
-  justify-content:flex-start; 
 }
 
 .item-container p {
@@ -172,3 +174,10 @@ label {
   font-weight: lighter;
   color: #424242;
 }
+
+
+
+
+
+/*USE DISPLAY: FLEX
+FLEX-WRAP: WRAP
