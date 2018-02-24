@@ -17,10 +17,9 @@
   <header>
 
     <img srcset="images/logo-scarfcat-100w.png 100w, images/logo-scarfcat-75w.png 75w, images/logo-scarfcat-50w.png 50w"
-         sizes="(max-width: 800px) 100px, (max-width: 1600px) 75px, (min-width: 1601px) 50px"
+         sizes="(max-width: 800px) 50px, (max-width: 1600px) 75px, (min-width: 1601px) 100px"
          src="images/logo-scarfcat-100w.png" 
-         alt="dapper cartoon cat wearing a scarf" 
-         class="float">
+         alt="dapper cartoon cat wearing a scarf">
     <h1 class="clear">
       <span class="logo-w">W</span>inter
       <span class="logo-w">W</span>ear
@@ -42,9 +41,6 @@
 
     <section class="clear">
       <h2>Scarves</h2>
-
-      <div class="item-container"> 
-        
         <aside class="filter">
           <h2>Filters</h2>
           <h3>Price</h3>
@@ -52,6 +48,9 @@
           <h3>Fabric</h3>
           <h3>Brand</h3>        
         </aside>
+      <div class="item-container"> 
+        
+
         
         <div class="item">
           <img srcset="images/reversible-plaid-300.jpg 300w, images/reversible-plaid-200.jpg 200w, images/reversible-plaid-150.jpg 150w"
@@ -139,17 +138,17 @@
     
   </main>
   
-  <footer class="clear">    
-
-    
-      <form>
+  <footer class="clear">
+      <form name="signup" onsubmit="capture()">
         <label>Sign up for our mailing list:
           <input type="email" name="email">
         </label>
-
         <input type="submit" value="Submit">
       </form>
   </footer>
+  
   <script src="js/script.js"></script>
+  <script src="js/form-handler.js"></script>
+  
 </body>
 </html>

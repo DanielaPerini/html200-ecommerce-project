@@ -1,0 +1,15 @@
+head:
+colocar o gatinho acima do nome do site
+
+body:
+coloar um fundo comum a todos desde o titulo (Scarves) até o footer, mas manter o fundo rosa dos produtos encima deste
+
+filters:
+fazer os filtros funcionarem (nao sei se da pra fazer com js)
+
+produtos:
+ajeitar legenda
+colocar um fundo branco comum a escrita E AS IMAGENS que mova dependendo de ambos
+
+footer:
+centralizar o sign up form

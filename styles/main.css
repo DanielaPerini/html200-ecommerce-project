@@ -7,7 +7,7 @@
 body {
   font-size: 100%;
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
-  background-color: #fffff1;
+  background-color: #fff8f1;
 }
 
 p {
@@ -16,31 +16,22 @@ p {
   color: #6f6f6f;
 }
 
-/* TODO: size images manually so this is not necessary */
-img {
-  max-height: 20rem;
-}
-
-
 h1 {
   color: #6B2737;
 }
 
 /***************** NAV *****************/
 
-header nav {
-  float: right;
-}
-
 nav ul {
   width: 100%;
-  border: 1px solid red;
-  margin: 5rem; 
+  padding: 10rem 0rem 2rem 15rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   
 }
 
 nav li {
-  float: left;  
   margin: 1rem 1rem;
 }
 
@@ -56,35 +47,62 @@ nav a:hover {
   text-decoration: underline;
 }
 
-footer nav {
-  text-align: center;
-  float: left;
+@media (max-width: 585px){
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    padding: 2rem 0rem;
+  }
+}
+
+@media (min-width: 586px) and (max-width: 1168px){
+  nav ul {
+    width: 100%;
+    padding: 5rem 0rem 2rem 20rem;
+  }
 }
 
 /**************** HERO *****************/
 
-header img {
-  max-height: 6rem;
-  float: left;
+header  {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fffff1;
+  padding-top: 3rem;
 }
 
 header h1{
   text-align: center;
   font-family: 'Tangerine', "Open Sans", Helvetica, Arial, sans-serif;
   font-size: 5rem;
+  padding-top: 3rem;
+}
+
+header img {
+  max-height: 160px; 
 }
 
 h1 .logo-w {
   font-size: 6.5rem;
 }
 
+@media (min-width:637px) and (max-width: 800px){
+  header img {
+    max-height: 100px; 
+  }
+}
+
 /**************** ASIDE ****************/
 
 aside {
-  width: 25%;
-  margin: 0 auto;
+  width: 24%;
+  margin: 3rem auto;
   padding: 2rem;
-  border: 1px solid black;
+  background-color: #EECFD4;
   float: left;
 }
 
@@ -99,16 +117,32 @@ aside h2 {
   color: #4a1b26;
 }
 
+@media (max-width: 797px){
+  aside {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
 /*********** PRODUCTS SECTION ***********/
 .item-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 90%;
+  justify-content: center;
+  width: 75%;
   height: auto;
   padding: 2rem;
-  margin: 0 auto;   
+  margin: 3rem auto;   
   background-color: #EECFD4;
+  float: right;
+}
+
+@media (max-width: 797px){
+  
+  .item-container{
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .item-container p {
@@ -117,29 +151,39 @@ aside h2 {
 }
 
 .item{
-  width: 22%;
+  width: 220px;
   height: 30%;
   margin: 0 1rem auto;
   border: 2px solid #EAD7D1;
   background-color: white;
-  float: right;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .clear {
   clear: both;
 }
 
+
 section {
   padding: 0 .75rem;
 }
 
 h2 {
-  padding-top: 1.5rem;
-  font-size: 2rem;
+  padding-top: 3rem;
+  font-size: 2.3rem;
   text-align: center;
   font-family: 'Arima Madurai', "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 500;
   color: #4a1b26;
+}
+
+.filter h2 {
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
+  font-size: 1.9rem;
 }
 
 h3 {
@@ -156,7 +200,12 @@ footer {
   width: 100%;
   height: 8rem;
   margin: 0 auto;
-  border: 1px solid blue;
+  background-color: #fffff1;
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
 }
 
 
