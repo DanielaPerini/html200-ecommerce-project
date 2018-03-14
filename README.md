@@ -69,4 +69,8 @@ Lesson 09:
 Each weekly assignment will be graded independently. There will not be a final grade for the entire project.
 
 ## Testing
-[update this section with information about the testing steps you took to ensure site quality]
+Audience: women, ages 30-55, emploied, american
+About 82% of women between 30-55 owns a smartphone.
+Mostly access will come from mobile devices.
+Website appears to have a good responsivity (tested at http://responsivedesignchecker.com for all possible devices).
+Performace Median (tested at webpagetest.org), the problem is on Cache static content.
